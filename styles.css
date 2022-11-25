@@ -7,8 +7,8 @@ body {
 
 #sketch-container {
     display: grid;
-    width: 40vw;
-    height: 40vw;
+    width: 500px;
+    height: 500px;
     border: 2px solid black;
     margin: auto;
 }
