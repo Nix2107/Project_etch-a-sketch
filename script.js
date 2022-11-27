@@ -1,8 +1,12 @@
-let sketchpad = document.querySelector ('#sketch-container')
+/* These are the variables which will be used in the program*/
 let drawingColor
 let rainbowMode = 'inactive'
 let colorMode = 'inactive'
 let mouseState = 'up'
+
+/* all the element selectors and the event listeners for what's done when buttons are pressed*/
+
+let sketchpad = document.querySelector ('#sketch-container')
 
 let blackColor = document.querySelector ('#black');
 blackColor.addEventListener ('click', () => {colorMode = 'active';
@@ -31,11 +35,15 @@ rainbowBtn.addEventListener ('click', () => {rainbowMode = 'active';
 let startSketch = document.querySelector ('#start-sketch');
 startSketch.addEventListener ('click', () => {generateGrid();})
 
+/*the functions used in the programm*/
+
+/*for changing the color (updates the drawingColor)*/
 function updateColor(color) 
 {
     drawingColor = color  
 }
 
+/*for creating the drawing grid and it's content*/
 function generateGrid(unitsNum = prompt ('Choose the resolution of your sketchpad')) 
 {
     sketchpad.setAttribute ('style', `grid-template-columns: repeat(${unitsNum}, 1fr)`,
@@ -60,6 +68,7 @@ function generateGrid(unitsNum = prompt ('Choose the resolution of your sketchpa
     
 }
 
+/*the function to be run when the rainbow mode button is activated*/
 function rainbow() 
 {
     let randomRed = Math.floor(Math.random()*256);
