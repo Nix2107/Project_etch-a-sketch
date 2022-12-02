@@ -32,6 +32,11 @@ rainbowBtn.addEventListener ('click', () => {rainbowMode = 'active';
                                             colorMode = 'inactive';
                                             updateColor(rainbow());});
 
+let eraseBtn = document.querySelector ('#eraser');
+eraseBtn.addEventListener ('click', () => {colorMode = 'active';
+                                            rainbowMode = 'inactive';
+                                            updateColor ('white');});
+
 let startSketch = document.querySelector ('#start-sketch');
 startSketch.addEventListener ('click', () => {generateGrid();})
 

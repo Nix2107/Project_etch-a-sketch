@@ -1,8 +1,11 @@
 body {
+    background-color:antiquewhite;
+    text-align: center;
+}
+
+.main-sketch {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
 }
 
 #sketch-container {
@@ -10,10 +13,68 @@ body {
     width: 500px;
     height: 500px;
     border: 2px solid black;
-    margin: auto;
 }
 
 .drawing-grid {
     user-select: none;
     border: 1px solid grey;
 }
+
+.primary-ui {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    gap: 10px;
+}
+#colors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.secondary-ui {
+    margin: auto;
+}
+
+#function-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorbtn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid;
+}
+
+#red {
+    background-color: red;
+    border-color: red;
+}
+
+
+#blue {
+    background-color: blue;
+    border-color: blue;
+}
+
+#green {
+    background-color: green;
+    border-color: green;
+}
+
+#black {
+    background-color: black;
+}
+
+#rainbow {
+    background: linear-gradient(rgb(250, 13, 13), rgb(235, 156, 9), yellow, rgb(94, 235, 94), rgb(73, 73, 247), rgb(120, 67, 158), violet);
+}
+#red:active,
+#blue:active,
+#green:active,
+#black:active,
+#rainbow:active,
+#eraser:active { border-color: gray};

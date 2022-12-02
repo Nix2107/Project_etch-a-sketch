@@ -9,19 +9,28 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <div id="sketch-container"></div>
-    <div class="btn-container">
-        <button id="start-sketch">Start Sketching</button>
-    </div>
-
-    <div class="btn-container">
-        <button class="colorbtn" id="red">Red</button>
-        <button class="colorbtn" id="blue">Blue</button>
-        <button class="colorbtn" id="green">Green</button>
-        <button class="colorbtn" id="black">Black</button>
-        <button class="colorbtn" id="rainbow">Rainbow Mode</button>
-    </div>
+    <main>
+        <h1> Etch-a-Sketch</h1>
+        <div class="main-sketch">
+            <div class="primary-ui">
+                <div id="sketch-container"></div>
+                <div class="btn-container" id="colors">
+                    <button class="colorbtn" id="red"></button>
+                    <button class="colorbtn" id="blue"></button>
+                    <button class="colorbtn" id="green"></button>
+                    <button class="colorbtn" id="black"></button>
+                    <button class="colorbtn" id="eraser"> erase</button>
+                    <button class="colorbtn" id="rainbow"></button>
+                </div>
+            </div>
+            <div class="secondary-ui">
+                <div class="btn-container" id="function-btns">
+                    <button id="start-sketch">Start Sketching</button>
+                    <button id="reset-sketch">Clear</button>
+                </div>
+            </div>
+        </div>
+    </main>
     
 </body>
 </html>
