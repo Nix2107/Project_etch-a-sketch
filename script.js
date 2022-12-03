@@ -5,7 +5,6 @@ let colorMode = 'inactive'
 let mouseState = 'up'
 
 /* all the element selectors and the event listeners for what's done when buttons are pressed*/
-
 let sketchpad = document.querySelector ('#sketch-container')
 
 let blackColor = document.querySelector ('#black');
@@ -35,10 +34,13 @@ rainbowBtn.addEventListener ('click', () => {rainbowMode = 'active';
 let eraseBtn = document.querySelector ('#eraser');
 eraseBtn.addEventListener ('click', () => {colorMode = 'active';
                                             rainbowMode = 'inactive';
-                                            updateColor ('white');});
+                                            updateColor ('antiquewhite');});
 
 let startSketch = document.querySelector ('#start-sketch');
-startSketch.addEventListener ('click', () => {generateGrid();})
+startSketch.addEventListener ('click', () => {generateGrid();});
+
+let resetSketch = document.querySelector ('#reset-sketch');
+resetSketch.addEventListener ('click', () => {location.reload()});
 
 /*the functions used in the programm*/
 

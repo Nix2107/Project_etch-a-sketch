@@ -13,6 +13,7 @@ body {
     width: 500px;
     height: 500px;
     border: 2px solid black;
+    user-select: none;
 }
 
 .drawing-grid {
@@ -40,6 +41,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+}
+
+#start-sketch,
+#reset-sketch {
+    background-color: black;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: larger;
+    font-weight: 600;
 }
 
 .colorbtn {
